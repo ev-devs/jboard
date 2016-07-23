@@ -1,0 +1,23 @@
+{
+  "name": "jboard",
+  "version": "0.0.1",
+  "description": "a custom keyboard built to fit in a 10 inch screen",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ev-devs/jboard.git"
+  },
+  "author": "Juan G Ruelas Jr.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ev-devs/jboard/issues"
+  },
+  "homepage": "https://github.com/ev-devs/jboard#readme",
+  "dependencies": {
+    "jquery": "^3.1.0",
+    "materialize-css": "^0.97.6"
+  }
+}
