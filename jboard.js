@@ -13,7 +13,7 @@ var jboard = function( arg, input_field) {
     this.input_field = input_field;
 
 
-    
+
 
 }
 

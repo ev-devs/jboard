@@ -1,0 +1,16 @@
+.jboard-key {
+    margin: : 6px 6px;
+    padding : 2px;
+    text-shadow: 0px 1px 1px #ffffff;
+    box-shadow: 0px 1px 3px #000000;
+}
+
+
+.standard-jboard-container {
+
+}
+
+.standard-row{
+    width: 100%;
+    padding: 2px;
+}
