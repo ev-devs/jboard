@@ -16,13 +16,21 @@
             <h1>Hello</h1>
 
             <div class="input-field col s6">
-              <input placeholder="Placeholder" id="keyboard" type="text" class="validate">
+              <input placeholder="Placeholder" id="keyboard-1" type="text" class="validate">
+              <label for="first_name">First Name</label>
+            </div>
+
+
+            <br><br>
+
+            <div class="input-field col s6">
+              <input placeholder="Placeholder" id="keyboard-2" type="text" class="validate">
               <label for="first_name">First Name</label>
             </div>
         </div>
 
 
-        <div class="container center" id="jboard-container">
+        <div class="container center" id="standard-jboard-container">
             <div class="row" id="row-1">
                 <div class="key" id="q" style="display : inline-block">q</div>
                 <div class="key" id="w" style="display : inline-block">w</div>
@@ -67,7 +75,8 @@
 
         <script src="jboard.js" charset="utf-8"></script>
         <script>
-            $('#keyboard').jboard('standard');
+            $('#keyboard-1').jboard('standard');
+            $('#keyboard-2').jboard('num');
         </script>
 
 
