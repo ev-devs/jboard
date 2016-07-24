@@ -3,8 +3,8 @@
     font-family: Arial Unicode MS;
     margin: : 6px 6px;
     padding : 2px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 7px;
+    padding-right: 7px;
     text-shadow: 0px 1px 1px #ffffff;
     box-shadow: 0px 1px 3px #000000;
     border-radius: 5px;
@@ -15,11 +15,7 @@
     -webkit-box-shadow: 0px 1px 3px #000000;
     -moz-box-shadow: 0px 1px 3px #000000;
     -moz-border-radius: 5px;
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 );
 }
-
-
-
 
 .standard-jboard-container {
 
@@ -36,6 +32,10 @@
 }
 
 .space-key {
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#keyboard-modal {
+    background: #2979ff;
 }

@@ -1,3 +1,7 @@
+$('.modal-trigger').leanModal({
+    opacity: 0, // Opacity of modal background
+});
+
 var global = null
 
 const standard_jboard   = $('#standard-jboard-container').html()
