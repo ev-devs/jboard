@@ -1,6 +1,12 @@
 var global = null
 var clicks = 0;
 
+console.log('we in nigga')
+console.log( $('#jboard-container').html() )
+
+
+
+
 jQuery.fn.extend({
 
     standard_jboard : function() {
@@ -8,9 +14,12 @@ jQuery.fn.extend({
 
         this.ready_board = $(document.createElement('div'))
             .addClass('jboard active')
-            .html('html here')
+            .html( $('#jboard-container').html() )
             .css( 'width', this[0].offsetWidth)
             .css( 'background-color', 'red')
+            .css( 'position', 'fixed')
+
+
         console.log(this.ready_board)
 
             /*
@@ -45,7 +54,13 @@ jQuery.fn.extend({
 
         console.log(this)
         console.log(arg)
+
         global = this;
+        this.css('margin', '0')
+
+        this[0].onresize = function(){
+            console.log('testsetsettsts')
+        }
 
 
         $(document).mouseup(function (e){
@@ -55,13 +70,12 @@ jQuery.fn.extend({
 
             if (!container.is(e.target) // if the target of the click isn't the container...
                 && container.has(e.target).length === 0 // ... nor a descendant of the container
-                && !input.is(e.target)
+                && !input.is(e.target) // .. nor
             )
             {
                 container.hide();
             }
         });
-
 
         if (arg == "standard"){
 
@@ -83,5 +97,9 @@ jQuery.fn.extend({
             console.log('Invalid Arguements for jboard')
         }
 
+    },
+
+    style_board : function() {
+        console.log(this)
     }
 })
