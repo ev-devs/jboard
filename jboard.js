@@ -1,34 +1,32 @@
 var global = null
 
-var jboard_input        = null;
 const standard_jboard   = $('#standard-jboard-container').html()
-const num_jboard        = ""
+const num_jboard        = $('#num-jboard-container').html()
 
 
-var jboard = function(arg) {
-    console.log(arg)
-    console.log('keyboard created')
-    if (arg == "standard"){
-        this.keyboardType = "standard"
-    }
-    else if (arg == "num"){
-        this.keyboardType = "num"
-    }
-    else {
-        this.keyboardType = undefined
-    }
+var jboard = function( arg, input_field) {
 
-    //return this
+    if (arg == "standard"){ this.keyboardType = "standard" }
+    else if (arg == "num"){ this.keyboardType = "num" }
+    else { this.keyboardType = undefined; return console.log('ERROR: undefined arguements to jboard')}
+
+    this.input_field = input_field;
+
+
+    
+
 }
 
 
 jQuery.fn.extend({
     jboard : function(arg) {
-        var board = new jboard(arg)
-        console.log(board)
+        return new jboard(arg, this) // instantiate a new jboard
     }
 
 });
+
+
+
 
 
 jQuery.fn.extend({
