@@ -15,7 +15,8 @@
 
         <div class="container">
 
-            <h1>Hello</h1>
+            <h1>Standard</h1>
+
 
             <div class="input-field col s6">
               <input placeholder="Placeholder" id="keyboard-1" type="text" class="validate">
@@ -23,9 +24,10 @@
             </div>
 
 
-            <br><b
+            <br><br>
 
 
+            <h1>Num</h1>
             <div class="input-field col s6">
               <input placeholder="Placeholder" id="keyboard-2" type="text" class="validate">
               <label for="first_name">First Name</label>
@@ -33,11 +35,9 @@
         </div>
 
 
-
-
-
           <!-- Modal Trigger -->
-          <a class="waves-effect waves-light btn modal-trigger" href="#keyboard-modal">Modal</a>
+          <!-- <a class="waves-effect waves-light btn keyboard-trigger" href="#keyboard-modal">Modal</a>
+          <a class="waves-effect waves-light btn num-trigger" href="#num-modal">Modal</a> -->
 
           <!-- Modal Structure -->
           <div id="keyboard-modal" class="modal bottom-sheet">
@@ -95,42 +95,42 @@
             </div>
           </div>
 
-
-
-
-
-        <h3 class="center">Standard</h3>
-
-
-
-        <h3 class="center">Num</h3>
-
-        <div class="container center num-jboard-container" id="num-jboard-container">
-            <div class="row num-row" id="row-1" style="margin : 0">
-                <div class="jboard-key" id="7" style="display : inline-block">7</div>
-                <div class="jboard-key" id="8" style="display : inline-block">8</div>
-                <div class="jboard-key" id="7" style="display : inline-block">9</div>
-                <div class="jboard-key" id="backspace" style="display : inline-block"> ⌫ </div>
-            </div>
-            <div class="row num-row" id="row-2" style="margin : 0">
-                <div class="jboard-key" id="4" style="display : inline-block">4</div>
-                <div class="jboard-key" id="5" style="display : inline-block">5</div>
-                <div class="jboard-key" id="6" style="display : inline-block">6</div>
-                <div class="jboard-key" id="clear" style="display : inline-block"> C </div>
-            </div>
-            <div class="row num-row" id="row-3" style="margin : 0">
-                <div class="jboard-key" id="1" style="display : inline-block">4</div>
-                <div class="jboard-key" id="2" style="display : inline-block">5</div>
-                <div class="jboard-key" id="3" style="display : inline-block">6</div>
-                <div class="jboard-key" id="blank" style="display : inline-block"> B </div>
-            </div>
-            <div class="row num-row" id="row-4" style="margin : 0">
-                <div class="jboard-key" id="0" style="display : inline-block">0</div>
-                <div class="jboard-key" id="dot" style="display : inline-block">.</div>
-                <div class="jboard-key" id="accept" style="display : inline-block"> ✓ </div>
-                <div class="jboard-key" id="reject" style="display : inline-block"> ✖ </div>
+          <!-- Modal Structure -->
+          <div id="num-modal" class="modal bottom-sheet">
+            <div class="modal-content">
+                <div class="container center num-jboard-container" id="num-jboard-container">
+                    <div class="row num-row" id="row-1" style="margin : 0">
+                        <div class="jboard-key" id="7" style="display : inline-block">7</div>
+                        <div class="jboard-key" id="8" style="display : inline-block">8</div>
+                        <div class="jboard-key" id="7" style="display : inline-block">9</div>
+                        <div class="jboard-key" id="backspace" style="display : inline-block"> ⌫ </div>
+                    </div>
+                    <div class="row num-row" id="row-2" style="margin : 0">
+                        <div class="jboard-key" id="4" style="display : inline-block">4</div>
+                        <div class="jboard-key" id="5" style="display : inline-block">5</div>
+                        <div class="jboard-key" id="6" style="display : inline-block">6</div>
+                        <div class="jboard-key" id="clear" style="display : inline-block"> C </div>
+                    </div>
+                    <div class="row num-row" id="row-3" style="margin : 0">
+                        <div class="jboard-key" id="1" style="display : inline-block">4</div>
+                        <div class="jboard-key" id="2" style="display : inline-block">5</div>
+                        <div class="jboard-key" id="3" style="display : inline-block">6</div>
+                        <div class="jboard-key" id="blank" style="display : inline-block"> B </div>
+                    </div>
+                    <div class="row num-row" id="row-4" style="margin : 0">
+                        <div class="jboard-key" id="0" style="display : inline-block">0</div>
+                        <div class="jboard-key" id="dot" style="display : inline-block">.</div>
+                        <div class="jboard-key" id="accept" style="display : inline-block"> ✓ </div>
+                        <div class="jboard-key" id="reject" style="display : inline-block"> ✖ </div>
+                    </div>
+                </div>
             </div>
         </div>
+
+
+
+
+
 
 
         <script src="jboard.js" charset="utf-8"></script>
