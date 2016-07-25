@@ -133,9 +133,48 @@ function setupStandardKeyboard(input_field, board){
     var E = null;
     var R = null;
     var T = null;
+    var Y = null;
+    var U = null;
+    var I = null;
+    var O = null;
+    var P = null;
 
+    var A = null;
+    var S = null;
+    var D = null;
+    var F = null;
+    var G = null;
+    var H = null;
+    var J = null;
+    var K = null;
+    var L = null;
 
+    var Z = null;
+    var X = null;
+    var C = null;
+    var V = null;
+    var B = null;
+    var N = null;
+    var M = null;
+
+    var CAPS_ON = false;
+
+    /*NOW WE STUP EVENT HANDLERS FOR OUR KEYBOARD*/
     $(shift).click(function(event){
+        if (CAPS_ON == false){
+            CAPS_ON = true
+            $(this).css('background', "green")
+            Q = q; q.innerHTML = "Q"
+            W = w; w.innerHTML = "W"
+            E = e; e.innerHTML = "E"
+            R = r; r.innerHTML = "R"
+            T = t; t.innerHTML = "T"
+        }
+        else {
+            $(this).css('background', "#fff")
+            CAPS_ON = false
+            q = Q; Q.innerHTML = "q"
+        }
 
     })
 
