@@ -124,7 +124,7 @@ function setupStandardKeyboard(input_field, board){
     /*ROW FOUR*/
     var oneTwoThree   = $( board )[0].childNodes[1].childNodes[1].childNodes[7].childNodes[1]
     var space               = $( board )[0].childNodes[1].childNodes[1].childNodes[7].childNodes[3]
-    var symbols   = $( board )[0].childNodes[1].childNodes[1].childNodes[7].childNodes[5]
+    //var symbols   = $( board )[0].childNodes[1].childNodes[1].childNodes[7].childNodes[5]
 
 
     /*CHARACTERS NOW SHOWN UNTIL CLICKED*/
@@ -206,6 +206,10 @@ function setupStandardKeyboard(input_field, board){
 
         }
 
+    })
+
+    $(enter).click(function(){
+        $('#' + board[0].id ).closeModal()
     })
 
     $(del).click(function(event){
@@ -336,6 +340,65 @@ function setupStandardKeyboard(input_field, board){
 
 
 
+    $(z).click(function(event){
+        if(z.innerHTML != " "){
+            $(input_field).val( $(input_field).val() + z.innerHTML )
+        }
+    })
+
+    $(x).click(function(event){
+        if(x.innerHTML != " "){
+            $(input_field).val( $(input_field).val() + x.innerHTML )
+        }
+    })
+
+    $(c).click(function(event){
+        if(c.innerHTML != " "){
+            $(input_field).val( $(input_field).val() + c.innerHTML )
+        }
+    })
+
+    $(v).click(function(event){
+        if(v.innerHTML != " "){
+            $(input_field).val( $(input_field).val() + v.innerHTML )
+        }
+    })
+
+    $(b).click(function(event){
+        if(b.innerHTML != " "){
+            $(input_field).val( $(input_field).val() + b.innerHTML )
+        }
+    })
+
+    $(n).click(function(event){
+        if(n.innerHTML != " "){
+            $(input_field).val( $(input_field).val() + n.innerHTML )
+        }
+    })
+
+    $(m).click(function(event){
+        if(m.innerHTML != " "){
+            $(input_field).val( $(input_field).val() + m.innerHTML )
+        }
+    })
+
+    $(comma).click(function(event){
+        if(comma.innerHTML != " "){
+            $(input_field).val( $(input_field).val() + comma.innerHTML )
+        }
+    })
+
+    $(dot).click(function(event){
+        if(dot.innerHTML != " "){
+            $(input_field).val( $(input_field).val() + dot.innerHTML )
+        }
+    })
+
+    $(at).click(function(event){
+        if(at.innerHTML != " "){
+            $(input_field).val( $(input_field).val() + at.innerHTML )
+        }
+    })
 
 
 
