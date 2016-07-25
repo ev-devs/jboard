@@ -128,34 +128,6 @@ function setupStandardKeyboard(input_field, board){
 
 
     /*CHARACTERS NOW SHOWN UNTIL CLICKED*/
-    var Q = null;
-    var W = null;
-    var E = null;
-    var R = null;
-    var T = null;
-    var Y = null;
-    var U = null;
-    var I = null;
-    var O = null;
-    var P = null;
-
-    var A = null;
-    var S = null;
-    var D = null;
-    var F = null;
-    var G = null;
-    var H = null;
-    var J = null;
-    var K = null;
-    var L = null;
-
-    var Z = null;
-    var X = null;
-    var C = null;
-    var V = null;
-    var B = null;
-    var N = null;
-    var M = null;
 
     var ABC = null;
 
@@ -164,30 +136,74 @@ function setupStandardKeyboard(input_field, board){
     /*NOW WE STUP EVENT HANDLERS FOR OUR KEYBOARD*/
     $(shift).click(function(event){
         if (CAPS_ON == false){
+
             CAPS_ON = true
             $(this).css('background', "#76ff03")
 
-            Q = q; q.innerHTML = "Q"
-            W = w; w.innerHTML = "W"
-            E = e; e.innerHTML = "E"
-            R = r; r.innerHTML = "R"
-            T = t; t.innerHTML = "T"
-            Y = y; y.innerHTML = "Y"
-            U = u; u.innerHTML = "U"
-            I = I; i.innerHTML = "I"
-            O = O; o.innerHTML = "O"
-            P = P; p.innerHTML = "P"
+            q.innerHTML = q.innerHTML.toUpperCase()
+            w.innerHTML = w.innerHTML.toUpperCase()
+            e.innerHTML = e.innerHTML.toUpperCase()
+            r.innerHTML = r.innerHTML.toUpperCase()
+            t.innerHTML = t.innerHTML.toUpperCase()
+            y.innerHTML = y.innerHTML.toUpperCase()
+            u.innerHTML = u.innerHTML.toUpperCase()
+            i.innerHTML = i.innerHTML.toUpperCase()
+            o.innerHTML = o.innerHTML.toUpperCase()
+            p.innerHTML = p.innerHTML.toUpperCase()
 
-            A = a; a.innerHTML = "A"
-            S = s; s.innerHTML = "S"
-            D = d; d.innerHTML = "D"
-            F = f; f.innerHTML = "F"
-            F = f; f.innerHTML = "F"
+            a.innerHTML = a.innerHTML.toUpperCase()
+            s.innerHTML = s.innerHTML.toUpperCase()
+            d.innerHTML = d.innerHTML.toUpperCase()
+            f.innerHTML = f.innerHTML.toUpperCase()
+            g.innerHTML = g.innerHTML.toUpperCase()
+            h.innerHTML = h.innerHTML.toUpperCase()
+            j.innerHTML = j.innerHTML.toUpperCase()
+            k.innerHTML = k.innerHTML.toUpperCase()
+            l.innerHTML = l.innerHTML.toUpperCase()
+
+            z.innerHTML = z.innerHTML.toUpperCase()
+            x.innerHTML = x.innerHTML.toUpperCase()
+            c.innerHTML = c.innerHTML.toUpperCase()
+            v.innerHTML = v.innerHTML.toUpperCase()
+            b.innerHTML = b.innerHTML.toUpperCase()
+            n.innerHTML = n.innerHTML.toUpperCase()
+            m.innerHTML = m.innerHTML.toUpperCase()
+
         }
         else {
-            $(this).css('background', "#fff")
+            
             CAPS_ON = false
-            q = Q; Q.innerHTML = "q"
+            $(this).css('background', "#fff")
+
+            q.innerHTML = q.innerHTML.toLowerCase()
+            w.innerHTML = w.innerHTML.toLowerCase()
+            e.innerHTML = e.innerHTML.toLowerCase()
+            r.innerHTML = r.innerHTML.toLowerCase()
+            t.innerHTML = t.innerHTML.toLowerCase()
+            y.innerHTML = y.innerHTML.toLowerCase()
+            u.innerHTML = u.innerHTML.toLowerCase()
+            i.innerHTML = i.innerHTML.toLowerCase()
+            o.innerHTML = o.innerHTML.toLowerCase()
+            p.innerHTML = p.innerHTML.toLowerCase()
+
+            a.innerHTML = a.innerHTML.toLowerCase()
+            s.innerHTML = s.innerHTML.toLowerCase()
+            d.innerHTML = d.innerHTML.toLowerCase()
+            f.innerHTML = f.innerHTML.toLowerCase()
+            g.innerHTML = g.innerHTML.toLowerCase()
+            h.innerHTML = h.innerHTML.toLowerCase()
+            j.innerHTML = j.innerHTML.toLowerCase()
+            k.innerHTML = k.innerHTML.toLowerCase()
+            l.innerHTML = l.innerHTML.toLowerCase()
+
+            z.innerHTML = z.innerHTML.toLowerCase()
+            x.innerHTML = x.innerHTML.toLowerCase()
+            c.innerHTML = c.innerHTML.toLowerCase()
+            v.innerHTML = v.innerHTML.toLowerCase()
+            b.innerHTML = b.innerHTML.toLowerCase()
+            n.innerHTML = n.innerHTML.toLowerCase()
+            m.innerHTML = m.innerHTML.toLowerCase()
+
         }
 
     })
