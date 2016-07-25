@@ -216,7 +216,7 @@ function setupStandardKeyboard(input_field, board){
     })
 
 
-    /*INPUT EVENT FOR NORMAL KEYS HANDLERS*/
+    /*INPUT EVENT FOR NORMAL KEYS HANDLERS*************************************/
     $(q).click(function(event){
         if(q.innerHTML != " "){
             $(input_field).val( $(input_field).val() + q.innerHTML )
@@ -277,6 +277,68 @@ function setupStandardKeyboard(input_field, board){
         }
     })
 
+    /*ROW TWO******************************************************************/
+    $(a).click(function(event){
+        if(a.innerHTML != " "){
+            $(input_field).val( $(input_field).val() + a.innerHTML )
+        }
+    })
+
+    $(s).click(function(event){
+        if(s.innerHTML != " "){
+            $(input_field).val( $(input_field).val() + s.innerHTML )
+        }
+    })
+
+    $(d).click(function(event){
+        if(d.innerHTML != " "){
+            $(input_field).val( $(input_field).val() + d.innerHTML )
+        }
+    })
+
+    $(f).click(function(event){
+        if(f.innerHTML != " "){
+            $(input_field).val( $(input_field).val() + f.innerHTML )
+        }
+    })
+
+    $(g).click(function(event){
+        if(g.innerHTML != " "){
+            $(input_field).val( $(input_field).val() + g.innerHTML )
+        }
+    })
+
+    $(h).click(function(event){
+        if(h.innerHTML != " "){
+            $(input_field).val( $(input_field).val() + h.innerHTML )
+        }
+    })
+
+    $(j).click(function(event){
+        if(j.innerHTML != " "){
+            $(input_field).val( $(input_field).val() + j.innerHTML )
+        }
+    })
+
+    $(k).click(function(event){
+        if(k.innerHTML != " "){
+            $(input_field).val( $(input_field).val() + k.innerHTML )
+        }
+    })
+
+    $(l).click(function(event){
+        if(l.innerHTML != " "){
+            $(input_field).val( $(input_field).val() + l.innerHTML )
+        }
+    })
+
+    /*ROW THREE****************************************************************/
+
+
+
+
+
+
 
 
     //console.log( $( board )[0].childNodes[1].childNodes[1].childNodes[7].childNodes )
@@ -286,10 +348,6 @@ function setupStandardKeyboard(input_field, board){
 function setupNumKeyboard(input_field, board){
 
 }
-
-
-
-
 
 
 
