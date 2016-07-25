@@ -13,6 +13,7 @@ jQuery.fn.extend({
 
 var jboard = function(arg, input_field) {
 
+
     if (arg == "standard") {
         console.log("Creating a new standard keyboard")
         var board = createStandardKeyboard(input_field)
