@@ -25,7 +25,8 @@
 }
 
 .jboard-key:active {
-    background-color: #3e8e41;
+    background-color: #e3f2fd;
+    background: #e3f2fd ;
     box-shadow: 0 3px #000000;
     transform: translateY(0.2px);
 }
@@ -55,6 +56,17 @@
 .shift-key {
 
 
+}
+
+.extra-key {
+    display: inline-block;
+}
+
+.enter-key {
+    background: #76ff03;
+}
+.delete-key {
+    background: #ef5350;
 }
 
 

@@ -120,6 +120,7 @@ function setupStandardKeyboard(input_field, board){
     var comma   = $( board )[0].childNodes[1].childNodes[1].childNodes[5].childNodes[17]
     var dot     = $( board )[0].childNodes[1].childNodes[1].childNodes[5].childNodes[19]
     var at      = $( board )[0].childNodes[1].childNodes[1].childNodes[5].childNodes[21]
+    var extra   = $( board )[0].childNodes[1].childNodes[1].childNodes[5].childNodes[23]
 
 
     /*ROW FOUR*/
@@ -176,7 +177,7 @@ function setupStandardKeyboard(input_field, board){
         if (CAPS_ON == false){
 
             CAPS_ON = true
-            $(this).css('background', "#76ff03")
+            $(this).css('background', "#ea80fc")
 
             q.innerHTML = q.innerHTML.toUpperCase()
             w.innerHTML = w.innerHTML.toUpperCase()
@@ -442,6 +443,11 @@ function setupStandardKeyboard(input_field, board){
             $(input_field).val( $(input_field).val() + at.innerHTML )
         }
     })
+    $(extra).click(function(event){
+        if(extra.innerHTML != " "){
+            $(input_field).val( $(input_field).val() + extra.innerHTML )
+        }
+    })
 
 
     $(oneTwoThree).click(function(event){
@@ -471,6 +477,17 @@ function setupStandardKeyboard(input_field, board){
             prevState_l = l.innerHTML; l.innerHTML = "@";
 
             $(shift).hide()
+            prevState_z = z.innerHTML; z.innerHTML = "?"
+            prevState_x = x.innerHTML; x.innerHTML = "!"
+            prevState_c = c.innerHTML; c.innerHTML = "\""
+            prevState_v = v.innerHTML; v.innerHTML = "\'"
+            prevState_b = b.innerHTML; b.innerHTML = "\\"
+            prevState_n = n.innerHTML; n.innerHTML = "*"
+            prevState_m = m.innerHTML; m.innerHTML = "+"
+            prevState_comma = comma.innerHTML; comma.innerHTML = "="
+            prevState_dot = dot.innerHTML; dot.innerHTML = "#"
+            prevState_at = at.innerHTML; at.innerHTML = "%"
+            $(extra).show()
 
 
         }
@@ -478,12 +495,40 @@ function setupStandardKeyboard(input_field, board){
             NUM_AND_SYM_ON = false
 
             $(shift).show()
+            $(extra).hide()
 
             q.innerHTML = prevState_q;
             w.innerHTML = prevState_w;
             e.innerHTML = prevState_e;
             r.innerHTML = prevState_r;
             t.innerHTML = prevState_t;
+            y.innerHTML = prevState_y;
+            u.innerHTML = prevState_u;
+            i.innerHTML = prevState_i;
+            o.innerHTML = prevState_o;
+            p.innerHTML = prevState_p;
+
+            a.innerHTML = prevState_a;
+            s.innerHTML = prevState_s;
+            d.innerHTML = prevState_d;
+            f.innerHTML = prevState_f;
+            g.innerHTML = prevState_g;
+            h.innerHTML = prevState_h;
+            j.innerHTML = prevState_j;
+            k.innerHTML = prevState_k;
+            l.innerHTML = prevState_l;
+
+            z.innerHTML = prevState_z;
+            x.innerHTML = prevState_x;
+            c.innerHTML = prevState_c;
+            v.innerHTML = prevState_v;
+            b.innerHTML = prevState_b;
+            n.innerHTML = prevState_n;
+            m.innerHTML = prevState_m;
+            comma.innerHTML = prevState_comma;
+            dot.innerHTML = prevState_dot;
+            at.innerHTML = prevState_at;
+
         }
     })
 
