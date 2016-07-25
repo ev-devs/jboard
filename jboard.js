@@ -451,13 +451,39 @@ function setupStandardKeyboard(input_field, board){
 
             prevState_q = q.innerHTML; q.innerHTML = "1";
             prevState_w = w.innerHTML; w.innerHTML = "2";
-            prevState_e = e.innerHTML; e.innerHTML = "3"
-            prevState_r = r.innerHTML; r.innerHTML = "4"
+            prevState_e = e.innerHTML; e.innerHTML = "3";
+            prevState_r = r.innerHTML; r.innerHTML = "4";
+            prevState_t = t.innerHTML; t.innerHTML = "5";
+            prevState_y = y.innerHTML; y.innerHTML = "6";
+            prevState_u = u.innerHTML; u.innerHTML = "7";
+            prevState_i = i.innerHTML; i.innerHTML = "8";
+            prevState_o = o.innerHTML; o.innerHTML = "9";
+            prevState_p = p.innerHTML; p.innerHTML = "0";
+
+            prevState_a = a.innerHTML; a.innerHTML = "-";
+            prevState_s = s.innerHTML; s.innerHTML = "/";
+            prevState_d = d.innerHTML; d.innerHTML = ":";
+            prevState_f = f.innerHTML; f.innerHTML = ";";
+            prevState_g = g.innerHTML; g.innerHTML = "(";
+            prevState_h = h.innerHTML; h.innerHTML = ")";
+            prevState_j = j.innerHTML; j.innerHTML = "$";
+            prevState_k = k.innerHTML; k.innerHTML = "&";
+            prevState_l = l.innerHTML; l.innerHTML = "@";
+
+            $(shift).hide()
+
 
         }
         else {
             NUM_AND_SYM_ON = false
+
+            $(shift).show()
+
             q.innerHTML = prevState_q;
+            w.innerHTML = prevState_w;
+            e.innerHTML = prevState_e;
+            r.innerHTML = prevState_r;
+            t.innerHTML = prevState_t;
         }
     })
 
