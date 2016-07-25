@@ -39,6 +39,14 @@
     -ms-user-select: none; /* IE10+ */
 }
 
+.num-jboard-container {
+    padding: 0;
+    cursor: pointer;
+    -webkit-user-select: none; /* Chrome/Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+}
+
 .standard-row{
     width: 100%;
     padding: 2px;
@@ -67,6 +75,10 @@
 }
 .delete-key {
     background: #ef5350;
+}
+
+.blank-key {
+    height: : 27px:
 }
 
 

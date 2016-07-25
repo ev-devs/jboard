@@ -553,7 +553,7 @@ function setupStandardKeyboard(input_field, board){
 
 
 function setupNumKeyboard(input_field, board){
-    console.log(board[0].childNodes[1].childNodes[1].childNodes[3].childNodes)
+    console.log(board[0].childNodes[1].childNodes[1].childNodes[5].childNodes)
 
     var seven   = board[0].childNodes[1].childNodes[1].childNodes[1].childNodes[1]
     var eight   = board[0].childNodes[1].childNodes[1].childNodes[1].childNodes[3]
@@ -565,7 +565,10 @@ function setupNumKeyboard(input_field, board){
     var six     = board[0].childNodes[1].childNodes[1].childNodes[3].childNodes[5]
     var clear   = board[0].childNodes[1].childNodes[1].childNodes[3].childNodes[7]
 
-    
+    var one     = board[0].childNodes[1].childNodes[1].childNodes[5].childNodes[1]
+    var two     = board[0].childNodes[1].childNodes[1].childNodes[5].childNodes[3]
+    var three   = board[0].childNodes[1].childNodes[1].childNodes[5].childNodes[5]
+    var blank   = board[0].childNodes[1].childNodes[1].childNodes[5].childNodes[7]
 
 }
 
