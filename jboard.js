@@ -122,9 +122,9 @@ function setupStandardKeyboard(input_field, board){
     var at      = $( board )[0].childNodes[1].childNodes[1].childNodes[5].childNodes[21]
 
     /*ROW FOUR*/
-    var numbersAndSymbols   = $( board )[0].childNodes[1].childNodes[1].childNodes[7].childNodes[1]
+    var oneTwoThree   = $( board )[0].childNodes[1].childNodes[1].childNodes[7].childNodes[1]
     var space               = $( board )[0].childNodes[1].childNodes[1].childNodes[7].childNodes[3]
-    var specialCharacters   = $( board )[0].childNodes[1].childNodes[1].childNodes[7].childNodes[5]
+    var symbols   = $( board )[0].childNodes[1].childNodes[1].childNodes[7].childNodes[5]
 
 
     /*CHARACTERS NOW SHOWN UNTIL CLICKED*/
@@ -157,18 +157,32 @@ function setupStandardKeyboard(input_field, board){
     var N = null;
     var M = null;
 
+    var ABC = null;
+
     var CAPS_ON = false;
 
     /*NOW WE STUP EVENT HANDLERS FOR OUR KEYBOARD*/
     $(shift).click(function(event){
         if (CAPS_ON == false){
             CAPS_ON = true
-            $(this).css('background', "green")
+            $(this).css('background', "#76ff03")
+
             Q = q; q.innerHTML = "Q"
             W = w; w.innerHTML = "W"
             E = e; e.innerHTML = "E"
             R = r; r.innerHTML = "R"
             T = t; t.innerHTML = "T"
+            Y = y; y.innerHTML = "Y"
+            U = u; u.innerHTML = "U"
+            I = I; i.innerHTML = "I"
+            O = O; o.innerHTML = "O"
+            P = P; p.innerHTML = "P"
+
+            A = a; a.innerHTML = "A"
+            S = s; s.innerHTML = "S"
+            D = d; d.innerHTML = "D"
+            F = f; f.innerHTML = "F"
+            F = f; f.innerHTML = "F"
         }
         else {
             $(this).css('background', "#fff")
