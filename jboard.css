@@ -52,12 +52,9 @@
     padding-right: 5%;
 }
 
-#keyboard-modal {
-    background : #2196f3;
-
-}
 
 .modal-content {
     padding-left: 0;
 
+    background : #2196f3;
 }
