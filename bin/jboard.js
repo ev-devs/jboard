@@ -239,19 +239,19 @@ function setupStandardKeyboard(input_field, board){
     })
 
     $(enter).click(function(){
-        clickSound.play()
+        ////clickSound.play()
         $('#' + board[0].id ).closeModal()
     })
 
     $(del).click(function(event){
-        clickSound.play()
+        ////clickSound.play()
         if (input_field.val() != ""){
             input_field.val( input_field.val().substring(0, input_field.val().length - 1) )
         }
     })
 
     $(space).click(function(event){
-        clickSound.play()
+        ////clickSound.play()
         if (input_field.val() != ""){
             input_field.val( input_field.val() + " ")
         }
@@ -260,70 +260,70 @@ function setupStandardKeyboard(input_field, board){
 
     /*INPUT EVENT FOR NORMAL KEYS HANDLERS*************************************/
     $(q).click(function(event){
-        clickSound.play()
+        ////clickSound.play()
         if(q.innerHTML != " "){
             $(input_field).val( $(input_field).val() + q.innerHTML )
         }
     })
 
     $(w).click(function(event){
-        clickSound.play()
+        ////clickSound.play()
         if(w.innerHTML != " "){
             $(input_field).val( $(input_field).val() + w.innerHTML )
         }
     })
 
     $(e).click(function(event){
-        clickSound.play()
+        ////clickSound.play()
         if(e.innerHTML != " "){
             $(input_field).val( $(input_field).val() + e.innerHTML )
         }
     })
 
     $(r).click(function(event){
-        clickSound.play()
+        ////clickSound.play()
         if(r.innerHTML != " "){
             $(input_field).val( $(input_field).val() + r.innerHTML )
         }
     })
 
     $(t).click(function(event){
-        clickSound.play()
+        ////clickSound.play()
         if(t.innerHTML != " "){
             $(input_field).val( $(input_field).val() + t.innerHTML )
         }
     })
 
     $(y).click(function(event){
-        clickSound.play()
+        ////clickSound.play()
         if(y.innerHTML != " "){
             $(input_field).val( $(input_field).val() + y.innerHTML )
         }
     })
 
     $(u).click(function(event){
-        clickSound.play()
+        ////clickSound.play()
         if(u.innerHTML != " "){
             $(input_field).val( $(input_field).val() + u.innerHTML )
         }
     })
 
     $(i).click(function(event){
-        clickSound.play()
+        ////clickSound.play()
         if(i.innerHTML != " "){
             $(input_field).val( $(input_field).val() + i.innerHTML )
         }
     })
 
     $(o).click(function(event){
-        clickSound.play()
+        ////clickSound.play()
         if(o.innerHTML != " "){
             $(input_field).val( $(input_field).val() + o.innerHTML )
         }
     })
 
     $(p).click(function(event){
-        clickSound.play()
+        ////clickSound.play()
         if(p.innerHTML != " "){
             $(input_field).val( $(input_field).val() + p.innerHTML )
         }
@@ -331,63 +331,63 @@ function setupStandardKeyboard(input_field, board){
 
     /*ROW TWO******************************************************************/
     $(a).click(function(event){
-        clickSound.play()
+        ////clickSound.play()
         if(a.innerHTML != " "){
             $(input_field).val( $(input_field).val() + a.innerHTML )
         }
     })
 
     $(s).click(function(event){
-        clickSound.play()
+        ////clickSound.play()
         if(s.innerHTML != " "){
             $(input_field).val( $(input_field).val() + s.innerHTML )
         }
     })
 
     $(d).click(function(event){
-        clickSound.play()
+        ////clickSound.play()
         if(d.innerHTML != " "){
             $(input_field).val( $(input_field).val() + d.innerHTML )
         }
     })
 
     $(f).click(function(event){
-        clickSound.play()
+        ////clickSound.play()
         if(f.innerHTML != " "){
             $(input_field).val( $(input_field).val() + f.innerHTML )
         }
     })
 
     $(g).click(function(event){
-        clickSound.play()
+        ////clickSound.play()
         if(g.innerHTML != " "){
             $(input_field).val( $(input_field).val() + g.innerHTML )
         }
     })
 
     $(h).click(function(event){
-        clickSound.play()
+        ////clickSound.play()
         if(h.innerHTML != " "){
             $(input_field).val( $(input_field).val() + h.innerHTML )
         }
     })
 
     $(j).click(function(event){
-        clickSound.play()
+        ////clickSound.play()
         if(j.innerHTML != " "){
             $(input_field).val( $(input_field).val() + j.innerHTML )
         }
     })
 
     $(k).click(function(event){
-        clickSound.play()
+        ////clickSound.play()
         if(k.innerHTML != " "){
             $(input_field).val( $(input_field).val() + k.innerHTML )
         }
     })
 
     $(l).click(function(event){
-        clickSound.play()
+        ////clickSound.play()
         if(l.innerHTML != " "){
             $(input_field).val( $(input_field).val() + l.innerHTML )
         }
@@ -398,76 +398,76 @@ function setupStandardKeyboard(input_field, board){
 
 
     $(z).click(function(event){
-        clickSound.play()
+        ////clickSound.play()
         if(z.innerHTML != " "){
             $(input_field).val( $(input_field).val() + z.innerHTML )
         }
     })
 
     $(x).click(function(event){
-        clickSound.play()
+        ////clickSound.play()
         if(x.innerHTML != " "){
             $(input_field).val( $(input_field).val() + x.innerHTML )
         }
     })
 
     $(c).click(function(event){
-        clickSound.play()
+        ////clickSound.play()
         if(c.innerHTML != " "){
             $(input_field).val( $(input_field).val() + c.innerHTML )
         }
     })
 
     $(v).click(function(event){
-        clickSound.play()
+        ////clickSound.play()
         if(v.innerHTML != " "){
             $(input_field).val( $(input_field).val() + v.innerHTML )
         }
     })
 
     $(b).click(function(event){
-        clickSound.play()
+        ////clickSound.play()
         if(b.innerHTML != " "){
             $(input_field).val( $(input_field).val() + b.innerHTML )
         }
     })
 
     $(n).click(function(event){
-        clickSound.play()
+        ////clickSound.play()
         if(n.innerHTML != " "){
             $(input_field).val( $(input_field).val() + n.innerHTML )
         }
     })
 
     $(m).click(function(event){
-        clickSound.play()
+        ////clickSound.play()
         if(m.innerHTML != " "){
             $(input_field).val( $(input_field).val() + m.innerHTML )
         }
     })
 
     $(comma).click(function(event){
-        clickSound.play()
+        ////clickSound.play()
         if(comma.innerHTML != " "){
             $(input_field).val( $(input_field).val() + comma.innerHTML )
         }
     })
 
     $(dot).click(function(event){
-        clickSound.play()
+        ////clickSound.play()
         if(dot.innerHTML != " "){
             $(input_field).val( $(input_field).val() + dot.innerHTML )
         }
     })
 
     $(at).click(function(event){
-        clickSound.play()
+        ////clickSound.play()
         if(at.innerHTML != " "){
             $(input_field).val( $(input_field).val() + at.innerHTML )
         }
     })
     $(extra).click(function(event){
-        clickSound.play()
+        ////clickSound.play()
         if(extra.innerHTML != " "){
             $(input_field).val( $(input_field).val() + extra.innerHTML )
         }
@@ -584,60 +584,60 @@ function setupNumKeyboard(input_field, board){
 
     /*EVENT LISTENERS FOR OUR KEYBOARD KEYS*/
     $(seven).click(function(event){
-        clickSound.play()
+        ////clickSound.play()
         $(input_field).val( $(input_field).val() + seven.innerHTML )
     })
 
     $(eight).click(function(event){
-        clickSound.play()
+        ////clickSound.play()
         $(input_field).val( $(input_field).val() + eight.innerHTML )
     })
 
     $(nine).click(function(event){
-        clickSound.play()
+        ////clickSound.play()
         $(input_field).val( $(input_field).val() + nine.innerHTML )
     })
 
     $(del).click(function(event){
-        clickSound.play()
+        ////clickSound.play()
         input_field.val( input_field.val().substring(0, input_field.val().length - 1) )
     })
 
 
     $(four).click(function(event){
-        clickSound.play()
+        ////clickSound.play()
         $(input_field).val( $(input_field).val() + four.innerHTML )
     })
 
     $(five).click(function(event){
-        clickSound.play()
+        ////clickSound.play()
         $(input_field).val( $(input_field).val() + five.innerHTML )
     })
 
     $(six).click(function(event){
-        clickSound.play()
+        ////clickSound.play()
         $(input_field).val( $(input_field).val() + six.innerHTML )
     })
 
     $(clear).click(function(event){
-        clickSound.play()
+        ////clickSound.play()
         $(input_field).val( "" )
     })
 
 
 
     $(one).click(function(event){
-        clickSound.play();
+        ////clickSound.play();
         $(input_field).val( $(input_field).val() + one.innerHTML )
     })
 
     $(two).click(function(event){
-        clickSound.play();
+        ////clickSound.play();
         $(input_field).val( $(input_field).val() + two.innerHTML )
     })
 
     $(three).click(function(event){
-        clickSound.play();
+        ////clickSound.play();
         $(input_field).val( $(input_field).val() + three.innerHTML )
     })
 
@@ -646,22 +646,22 @@ function setupNumKeyboard(input_field, board){
     })
 
     $(zero).click(function(event){
-        clickSound.play();
+        ////clickSound.play();
         $(input_field).val( $(input_field).val() + zero.innerHTML )
     })
 
     $(dot).click(function(event){
-        clickSound.play();
+        ////clickSound.play();
         $(input_field).val( $(input_field).val() + dot.innerHTML )
     })
 
     $(accept).click(function(event){
-        clickSound.play();
+        ////clickSound.play();
         $('#' + board[0].id ).closeModal()
     })
 
     $(reject).click(function(event){
-        clickSound.play();
+        ////clickSound.play();
         $(input_field).val( "" )
         $('#' + board[0].id ).closeModal()
     })
