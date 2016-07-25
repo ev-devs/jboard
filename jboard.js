@@ -1,17 +1,33 @@
-/* $('.keyboard-trigger').leanModal({
-    opacity: 0, // Opacity of modal background
-});
+/*THIS IS FOR ERROR OUTPUTTING*/
+colors = {
+    reset: '\033[0m',
 
-$('.keyboard-trigger').leanModal({
-    opacity: 0, // Opacity of modal background
-});
-*/
+    //text color
+
+    black: '\033[30m',
+    red: '\033[31m',
+    green: '\033[32m',
+    yellow: '\033[33m',
+    blue: '\033[34m',
+    magenta: '\033[35m',
+    cyan: '\033[36m',
+    white: '\033[37m',
+
+    //background color
+
+    blackBg: '\033[40m',
+    redBg: '\033[41m',
+    greenBg: '\033[42m',
+    yellowBg: '\033[43m',
+    blueBg: '\033[44m',
+    magentaBg: '\033[45m',
+    cyanBg: '\033[46m',
+    whiteBg: '\033[47m'
+}
 
 
 
-
-
-/**LOGIC FOR THE KEYBOARD*/
+/* THIS EXTENDS jQuery AND IT IS OUR LOGIC FOR THE KEYBOARD */
 
 jQuery.fn.extend({
     jboard : function(arg) {
@@ -30,11 +46,12 @@ var jboard = function(arg, input_field) {
         setupStandardEventHandlers(input_field, board)
     }
     else if (arg == "num") {
+        console.log('Creating a new num keyboard')
         var board = createNumKeyboard(input_field)
         setupNumEventHandlers(input_field, board)
     }
     else {
-        console.log('ERROR: Invalid Argument to jboard')
+        console.error("ERROR: Invalid Argument to jboard \n Only 'standard' or 'num' accepted")
     }
 
 }
@@ -536,6 +553,19 @@ function setupStandardKeyboard(input_field, board){
 
 
 function setupNumKeyboard(input_field, board){
+    console.log(board[0].childNodes[1].childNodes[1].childNodes[3].childNodes)
+
+    var seven   = board[0].childNodes[1].childNodes[1].childNodes[1].childNodes[1]
+    var eight   = board[0].childNodes[1].childNodes[1].childNodes[1].childNodes[3]
+    var nine    = board[0].childNodes[1].childNodes[1].childNodes[1].childNodes[5]
+    var del     = board[0].childNodes[1].childNodes[1].childNodes[1].childNodes[7]
+
+    var four    = board[0].childNodes[1].childNodes[1].childNodes[3].childNodes[1]
+    var five    = board[0].childNodes[1].childNodes[1].childNodes[3].childNodes[3]
+    var six     = board[0].childNodes[1].childNodes[1].childNodes[3].childNodes[5]
+    var clear   = board[0].childNodes[1].childNodes[1].childNodes[3].childNodes[7]
+
+    
 
 }
 
