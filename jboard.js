@@ -692,47 +692,6 @@ function setupNumKeyboard(input_field, board){
         $('#' + board[0].id ).closeModal()
     })
 
-
-
-
-
-
-
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /**/
