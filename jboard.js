@@ -24,8 +24,8 @@ colors = {
     cyanBg: '\033[46m',
     whiteBg: '\033[47m'
 }
-
-
+//var clickSound = new Audio('bin/buttonclick.mp3');
+var clickSound = document.getElementById("click-sound")
 
 /* THIS EXTENDS jQuery AND IT IS OUR LOGIC FOR THE KEYBOARD */
 
@@ -265,16 +265,19 @@ function setupStandardKeyboard(input_field, board){
     })
 
     $(enter).click(function(){
+        clickSound.play()
         $('#' + board[0].id ).closeModal()
     })
 
     $(del).click(function(event){
+        clickSound.play()
         if (input_field.val() != ""){
             input_field.val( input_field.val().substring(0, input_field.val().length - 1) )
         }
     })
 
     $(space).click(function(event){
+        clickSound.play()
         if (input_field.val() != ""){
             input_field.val( input_field.val() + " ")
         }
@@ -283,18 +286,21 @@ function setupStandardKeyboard(input_field, board){
 
     /*INPUT EVENT FOR NORMAL KEYS HANDLERS*************************************/
     $(q).click(function(event){
+        clickSound.play()
         if(q.innerHTML != " "){
             $(input_field).val( $(input_field).val() + q.innerHTML )
         }
     })
 
     $(w).click(function(event){
+        clickSound.play()
         if(w.innerHTML != " "){
             $(input_field).val( $(input_field).val() + w.innerHTML )
         }
     })
 
     $(e).click(function(event){
+        clickSound.play()
         if(e.innerHTML != " "){
             $(input_field).val( $(input_field).val() + e.innerHTML )
         }
@@ -553,7 +559,6 @@ function setupStandardKeyboard(input_field, board){
 
 
 function setupNumKeyboard(input_field, board){
-    console.log(board[0].childNodes[1].childNodes[1].childNodes[5].childNodes)
 
     var seven   = board[0].childNodes[1].childNodes[1].childNodes[1].childNodes[1]
     var eight   = board[0].childNodes[1].childNodes[1].childNodes[1].childNodes[3]
@@ -569,6 +574,45 @@ function setupNumKeyboard(input_field, board){
     var two     = board[0].childNodes[1].childNodes[1].childNodes[5].childNodes[3]
     var three   = board[0].childNodes[1].childNodes[1].childNodes[5].childNodes[5]
     var blank   = board[0].childNodes[1].childNodes[1].childNodes[5].childNodes[7]
+
+
+    /*EVENT LISTENERS FOR OUR KEYBOARD KEYS*/
+    $(seven).click(function(event){
+        $(input_field).val( $(input_field).val() + seven.innerHTML )
+    })
+
+    $(eight).click(function(event){
+        $(input_field).val( $(input_field).val() + eight.innerHTML )
+    })
+
+    $(nine).click(function(event){
+        $(input_field).val( $(input_field).val() + nine.innerHTML )
+    })
+
+    $(del).click(function(event){
+        input_field.val( input_field.val().substring(0, input_field.val().length - 1) )
+    })
+
+
+    $(four).click(function(event){
+        $(input_field).val( $(input_field).val() + four.innerHTML )
+    })
+
+    $(five).click(function(event){
+        $(input_field).val( $(input_field).val() + five.innerHTML )
+    })
+
+    $(six).click(function(event){
+        $(input_field).val( $(input_field).val() + six.innerHTML )
+    })
+
+    $(clear).click(function(event){
+        $(input_field).val( "" )
+    })
+
+
+
+
 
 }
 

@@ -10,8 +10,9 @@
     </head>
     <body>
 
-
-
+        <audio id="click-sound">
+            <source src="bin/click.m4a" type="audio/mpeg">
+        </audio>
 
         <div class="container">
 
@@ -35,13 +36,19 @@
 
 
 
-            <h1>Test</h1>
+            <h1>Standard Test</h1>
             <div class="input-field col s6">
               <input placeholder="Placeholder" id="keyboard-3" type="text" class="validate">
               <label for="first_name">First Name</label>
             </div>
 
+            <h1>Num Test</h1>
+            <div class="input-field col s6">
+              <input placeholder="Placeholder" id="keyboard-4" type="text" class="validate">
+              <label for="first_name">First Name</label>
+            </div>
 
+            <br><br><br><br><br><br><br><br><br><br>
         </div>
 
 
@@ -145,6 +152,7 @@
             $('#keyboard-1').jboard('standard');
             $('#keyboard-2').jboard('num');
             $('#keyboard-3').jboard('standard');
+            $('#keyboard-4').jboard('num');
 
         </script>
 
