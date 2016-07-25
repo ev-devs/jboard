@@ -96,16 +96,57 @@ function setupStandardKeyboard(input_field, board){
     var del = $( board )[0].childNodes[1].childNodes[1].childNodes[1].childNodes[19]
 
     /*ROW TWO*/
+    var a       = $( board )[0].childNodes[1].childNodes[1].childNodes[3].childNodes[1]
+    var s       = $( board )[0].childNodes[1].childNodes[1].childNodes[3].childNodes[3]
+    var d       = $( board )[0].childNodes[1].childNodes[1].childNodes[3].childNodes[5]
+    var f       = $( board )[0].childNodes[1].childNodes[1].childNodes[3].childNodes[7]
+    var g       = $( board )[0].childNodes[1].childNodes[1].childNodes[3].childNodes[9]
+    var h       = $( board )[0].childNodes[1].childNodes[1].childNodes[3].childNodes[11]
+    var j       = $( board )[0].childNodes[1].childNodes[1].childNodes[3].childNodes[13]
+    var k       = $( board )[0].childNodes[1].childNodes[1].childNodes[3].childNodes[15]
+    var l       = $( board )[0].childNodes[1].childNodes[1].childNodes[3].childNodes[17]
+    var enter   = $( board )[0].childNodes[1].childNodes[1].childNodes[3].childNodes[19]
 
-    $(q).click(function(event){
-        console.log(q.innerHTML)
-        console.log(input_field)
+
+    /*ROW THREE*/
+    var shift   = $( board )[0].childNodes[1].childNodes[1].childNodes[5].childNodes[1]
+    var z       = $( board )[0].childNodes[1].childNodes[1].childNodes[5].childNodes[3]
+    var x       = $( board )[0].childNodes[1].childNodes[1].childNodes[5].childNodes[5]
+    var c       = $( board )[0].childNodes[1].childNodes[1].childNodes[5].childNodes[7]
+    var v       = $( board )[0].childNodes[1].childNodes[1].childNodes[5].childNodes[9]
+    var b       = $( board )[0].childNodes[1].childNodes[1].childNodes[5].childNodes[11]
+    var n       = $( board )[0].childNodes[1].childNodes[1].childNodes[5].childNodes[13]
+    var m       = $( board )[0].childNodes[1].childNodes[1].childNodes[5].childNodes[15]
+    var comma   = $( board )[0].childNodes[1].childNodes[1].childNodes[5].childNodes[17]
+    var dot     = $( board )[0].childNodes[1].childNodes[1].childNodes[5].childNodes[19]
+    var at      = $( board )[0].childNodes[1].childNodes[1].childNodes[5].childNodes[21]
+
+    /*ROW FOUR*/
+    var numbersAndSymbols   = $( board )[0].childNodes[1].childNodes[1].childNodes[7].childNodes[1]
+    var space               = $( board )[0].childNodes[1].childNodes[1].childNodes[7].childNodes[3]
+    var specialCharacters   = $( board )[0].childNodes[1].childNodes[1].childNodes[7].childNodes[5]
+
+
+    /*CHARACTERS NOW SHOWN UNTIL CLICKED*/
+    var Q = null;
+    var W = null;
+    var E = null;
+    var R = null;
+    var T = null;
+
+
+    $(shift).click(function(event){
+
     })
 
+    /* $(q).click(function(event){
+        console.log(q.innerHTML)
+        console.log(input_field)
+    })*/
 
 
-    //console.log( $( board )[0].childNodes[1].childNodes[1].childNodes[1].childNodes)
-    console.log(q)
+
+    console.log( $( board )[0].childNodes[1].childNodes[1].childNodes[7].childNodes )
 }
 
 
