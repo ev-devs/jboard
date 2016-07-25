@@ -171,7 +171,7 @@ function setupStandardKeyboard(input_field, board){
 
         }
         else {
-            
+
             CAPS_ON = false
             $(this).css('background', "#fff")
 
@@ -208,10 +208,48 @@ function setupStandardKeyboard(input_field, board){
 
     })
 
-    /* $(q).click(function(event){
-        console.log(q.innerHTML)
-        console.log(input_field)
-    })*/
+    /*INPUT EVENT HANDLERS*/
+    $(q).click(function(event){
+        if(q.innerHTML != " "){
+            $(input_field).val( $(input_field).val() + q.innerHTML )
+        }
+    })
+
+    $(w).click(function(event){
+        if(w.innerHTML != " "){
+            $(input_field).val( $(input_field).val() + w.innerHTML )
+        }
+    })
+
+    $(e).click(function(event){
+        if(e.innerHTML != " "){
+            $(input_field).val( $(input_field).val() + e.innerHTML )
+        }
+    })
+
+    $(r).click(function(event){
+        if(r.innerHTML != " "){
+            $(input_field).val( $(input_field).val() + r.innerHTML )
+        }
+    })
+
+    $(t).click(function(event){
+        if(t.innerHTML != " "){
+            $(input_field).val( $(input_field).val() + t.innerHTML )
+        }
+    })
+
+    $(y).click(function(event){
+        if(y.innerHTML != " "){
+            $(input_field).val( $(input_field).val() + y.innerHTML )
+        }
+    })
+
+    $(y).click(function(event){
+        if(y.innerHTML != " "){
+            $(input_field).val( $(input_field).val() + y.innerHTML )
+        }
+    })
 
 
 
