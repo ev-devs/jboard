@@ -121,6 +121,7 @@ function setupStandardKeyboard(input_field, board){
     var dot     = $( board )[0].childNodes[1].childNodes[1].childNodes[5].childNodes[19]
     var at      = $( board )[0].childNodes[1].childNodes[1].childNodes[5].childNodes[21]
 
+
     /*ROW FOUR*/
     var oneTwoThree   = $( board )[0].childNodes[1].childNodes[1].childNodes[7].childNodes[1]
     var space               = $( board )[0].childNodes[1].childNodes[1].childNodes[7].childNodes[3]
@@ -130,8 +131,45 @@ function setupStandardKeyboard(input_field, board){
     /*CHARACTERS NOW SHOWN UNTIL CLICKED*/
 
     var ABC = null;
-
     var CAPS_ON = false;
+    var NUM_AND_SYM_ON = false;
+
+    var prevState_q,
+        prevState_w,
+        prevState_e,
+        prevState_r,
+        prevState_t,
+        prevState_y,
+        prevState_u,
+        prevState_i,
+        prevState_o,
+        prevState_p;
+
+    var prevState_a,
+        prevState_s,
+        prevState_d,
+        prevState_f,
+        prevState_g,
+        prevState_h,
+        prevState_j,
+        prevState_k,
+        prevState_l;
+
+    var prevState_shift,
+        prevState_z,
+        prevState_x,
+        prevState_c,
+        prevState_v,
+        prevState_b,
+        prevState_n,
+        prevState_m,
+        prevState_comma,
+        prevState_dot,
+        prevState_at;
+
+    var prevState_oneTwoThree;
+
+
 
     /*NOW WE STUP EVENT HANDLERS FOR OUR KEYBOARD*/
     $(shift).click(function(event){
@@ -405,12 +443,24 @@ function setupStandardKeyboard(input_field, board){
         }
     })
 
-    $(oneTwoThree).click(function(event){
 
+    $(oneTwoThree).click(function(event){
+        //q.innerHTML =
+        if (NUM_AND_SYM_ON = false){
+            NUM_AND_SYM_ON = true
+
+            q.prevState = q.innerHTML
+            console.log(q.prevState)
+            //q.innerHTML = "1"
+            //w.innerHTML = "2"
+            //q.innerHTML = "1"
+        }
+        else {
+            NUM_AND_SYM_ON = false
+            console.log(q.prevState)
+        }
     })
 
-
-    //console.log( $( board )[0].childNodes[1].childNodes[1].childNodes[7].childNodes )
 }
 
 
