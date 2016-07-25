@@ -446,18 +446,18 @@ function setupStandardKeyboard(input_field, board){
 
     $(oneTwoThree).click(function(event){
         //q.innerHTML =
-        if (NUM_AND_SYM_ON = false){
+        if (NUM_AND_SYM_ON == false){
             NUM_AND_SYM_ON = true
 
-            q.prevState = q.innerHTML
-            console.log(q.prevState)
-            //q.innerHTML = "1"
-            //w.innerHTML = "2"
-            //q.innerHTML = "1"
+            prevState_q = q.innerHTML; q.innerHTML = "1";
+            prevState_w = w.innerHTML; w.innerHTML = "2";
+            prevState_e = e.innerHTML; e.innerHTML = "3"
+            prevState_r = r.innerHTML; r.innerHTML = "4"
+
         }
         else {
             NUM_AND_SYM_ON = false
-            console.log(q.prevState)
+            q.innerHTML = prevState_q;
         }
     })
 
