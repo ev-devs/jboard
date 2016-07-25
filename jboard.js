@@ -13,14 +13,25 @@ $('.keyboard-trigger').leanModal({
 
 /**LOGIC FOR THE KEYBOARD*/
 
+jQuery.fn.extend({
+    jboard : function(arg) {
+        return new jboard(arg, this) // instantiate a new jboard
+    }
+
+});
+
+
 var jboard = function(arg, input_field) {
 
 
     if (arg == "standard") {
-        setupStandardEventHandlers(input_field)
+        console.log("Creating a new standard keyboard")
+        var board = createStandardKeyboard(input_field)
+        setupStandardEventHandlers(input_field, board)
     }
     else if (arg == "num") {
-        setupNumEventHandlers(input_field)
+        var board = createNumKeyboard(input_field)
+        setupNumEventHandlers(input_field, board)
     }
     else {
         console.log('ERROR: Invalid Argument to jboard')
@@ -28,28 +39,38 @@ var jboard = function(arg, input_field) {
 
 }
 
-function setupStandardEventHandlers(input_field){
+
+function createStandardKeyboard(input_field){
+
+    var newBoard = $('#standard-modal-template').clone()
+    newBoard[0].id = input_field[0].id + "-modal"
+    $('body').append(newBoard)
+    return newBoard
+}
+
+
+function createNumKeyboard(input_field){
+    var newBoard = $('#num-modal-template').clone()
+    newBoard[0].id = input_field[0].id + "-modal"
+    $('body').append(newBoard)
+    return newBoard
+}
+
+function setupStandardEventHandlers(input_field, board){
+
 
     input_field.click(function(){
-        $('#keyboard-modal').openModal({
+        $('#' + board[0].id ).openModal({
+            opacity: 0, // Opacity of modal background
+        });
+    });
+}
+
+function setupNumEventHandlers(input_field, board){
+    input_field.click(function(){
+        $('#' + board[0].id ).openModal({
             opacity: 0, // Opacity of modal background
         });
     });
 
-
 }
-
-function setupNumEventHandlers(input_field){
-    input_field.click(function(){
-        $('#num-modal').openModal({
-            opacity: 0, // Opacity of modal background
-        });
-    });
-}
-
-jQuery.fn.extend({
-    jboard : function(arg) {
-        return new jboard(arg, this) // instantiate a new jboard
-    }
-
-});

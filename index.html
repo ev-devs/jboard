@@ -32,7 +32,19 @@
               <input placeholder="Placeholder" id="keyboard-2" type="text" class="validate">
               <label for="first_name">First Name</label>
             </div>
+
+
+
+            <h1>Test</h1>
+            <div class="input-field col s6">
+              <input placeholder="Placeholder" id="keyboard-3" type="text" class="validate">
+              <label for="first_name">First Name</label>
+            </div>
+
+
         </div>
+
+
 
 
           <!-- Modal Trigger -->
@@ -40,7 +52,7 @@
           <a class="waves-effect waves-light btn num-trigger" href="#num-modal">Modal</a> -->
 
           <!-- Modal Structure -->
-          <div id="keyboard-modal" class="modal bottom-sheet">
+          <div id="standard-modal-template" class="modal bottom-sheet">
             <div class="modal-content">
                 <div class="container center standard-jboard-container" id="standard-jboard-container">
                     <div class="row standard-row" id="standard-row-1" style="margin : 0">
@@ -91,12 +103,11 @@
                     </div>
 
                 </div>
-
             </div>
           </div>
 
           <!-- Modal Structure -->
-          <div id="num-modal" class="modal bottom-sheet">
+          <div id="num-modal-template" class="modal bottom-sheet">
             <div class="modal-content">
                 <div class="container center num-jboard-container" id="num-jboard-container">
                     <div class="row num-row" id="row-1" style="margin : 0">
@@ -137,6 +148,7 @@
         <script>
             $('#keyboard-1').jboard('standard');
             $('#keyboard-2').jboard('num');
+            $('#keyboard-3').jboard('standard');
         </script>
 
         <link rel="stylesheet" href="jboard.css" media="screen" title="no title" charset="utf-8">
