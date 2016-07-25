@@ -93,7 +93,7 @@ function setupStandardKeyboard(input_field, board){
     var i   = $( board )[0].childNodes[1].childNodes[1].childNodes[1].childNodes[15]
     var o   = $( board )[0].childNodes[1].childNodes[1].childNodes[1].childNodes[17]
     var p   = $( board )[0].childNodes[1].childNodes[1].childNodes[1].childNodes[19]
-    var del = $( board )[0].childNodes[1].childNodes[1].childNodes[1].childNodes[19]
+    var del = $( board )[0].childNodes[1].childNodes[1].childNodes[1].childNodes[21]
 
     /*ROW TWO*/
     var a       = $( board )[0].childNodes[1].childNodes[1].childNodes[3].childNodes[1]
@@ -208,7 +208,15 @@ function setupStandardKeyboard(input_field, board){
 
     })
 
-    /*INPUT EVENT HANDLERS*/
+    $(del).click(function(event){
+        console.log("delete was clicked!")
+        if (input_field.val() != ""){
+            input_field.val( input_field.val().substring(0, input_field.val().length - 1) )
+        }
+    })
+
+
+    /*INPUT EVENT FOR NORMAL KEYS HANDLERS*/
     $(q).click(function(event){
         if(q.innerHTML != " "){
             $(input_field).val( $(input_field).val() + q.innerHTML )
@@ -245,15 +253,33 @@ function setupStandardKeyboard(input_field, board){
         }
     })
 
-    $(y).click(function(event){
-        if(y.innerHTML != " "){
-            $(input_field).val( $(input_field).val() + y.innerHTML )
+    $(u).click(function(event){
+        if(u.innerHTML != " "){
+            $(input_field).val( $(input_field).val() + u.innerHTML )
+        }
+    })
+
+    $(i).click(function(event){
+        if(i.innerHTML != " "){
+            $(input_field).val( $(input_field).val() + i.innerHTML )
+        }
+    })
+
+    $(o).click(function(event){
+        if(o.innerHTML != " "){
+            $(input_field).val( $(input_field).val() + o.innerHTML )
+        }
+    })
+
+    $(p).click(function(event){
+        if(p.innerHTML != " "){
+            $(input_field).val( $(input_field).val() + p.innerHTML )
         }
     })
 
 
 
-    console.log( $( board )[0].childNodes[1].childNodes[1].childNodes[7].childNodes )
+    //console.log( $( board )[0].childNodes[1].childNodes[1].childNodes[7].childNodes )
 }
 
 
