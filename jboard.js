@@ -213,9 +213,14 @@ function setupStandardKeyboard(input_field, board){
     })
 
     $(del).click(function(event){
-        console.log("delete was clicked!")
         if (input_field.val() != ""){
             input_field.val( input_field.val().substring(0, input_field.val().length - 1) )
+        }
+    })
+
+    $(space).click(function(event){
+        if (input_field.val() != ""){
+            input_field.val( input_field.val() + " ")
         }
     })
 
@@ -400,8 +405,9 @@ function setupStandardKeyboard(input_field, board){
         }
     })
 
+    $(oneTwoThree).click(function(event){
 
-
+    })
 
 
     //console.log( $( board )[0].childNodes[1].childNodes[1].childNodes[7].childNodes )
