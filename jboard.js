@@ -726,7 +726,7 @@ function setupNumKeyboard(input_field, board){
     })
 }
 
-$('#keyboard-1').on( "jpress", function(event, key){
+$('#keyboard-1').on( "jpress" , function(event, key){
     console.log(key)
     // do any other things here
 })
