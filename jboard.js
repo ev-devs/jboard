@@ -2,14 +2,15 @@
 var clickSound = document.getElementById("click-sound")
 
 /* THIS EXTENDS jQuery AND IT IS OUR LOGIC FOR THE KEYBOARD */
-
 jQuery.fn.extend({
     jboard : function(arg) {
         return new jboard(arg, this) // instantiate a new jboard
     }
-
 });
 
+$('.jboard-key').click(function(event){
+    console.log('A KEY WAS CLICKED-======')
+})
 
 var jboard = function(arg, input_field) {
 
@@ -163,7 +164,16 @@ function setupStandardKeyboard(input_field, board){
 
 
     /*NOW WE STUP EVENT HANDLERS FOR OUR KEYBOARD*/
+    console.log(input_field)
+
+
+
     $(shift).click(function(event){
+
+        //console.log(jpress)
+        //this.dispatchEvent(jpress)
+        $(input_field).trigger("jpress", ['shift'])
+
         if (CAPS_ON == false){
 
             CAPS_ON = true
@@ -666,5 +676,9 @@ function setupNumKeyboard(input_field, board){
     })
 
 }
+
+$('#keyboard-1').on( "jpress", function(event, key){
+    console.log(key)
+})
 
 /**/

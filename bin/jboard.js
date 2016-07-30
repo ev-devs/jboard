@@ -268,6 +268,9 @@ function setupStandardKeyboard(input_field, board){
 
     $(w).click(function(event){
         ////clickSound.play()
+        
+        this.dispatchEvent('onkeyup')
+
         if(w.innerHTML != " "){
             $(input_field).val( $(input_field).val() + w.innerHTML )
         }
