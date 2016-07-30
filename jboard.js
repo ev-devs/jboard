@@ -515,9 +515,10 @@ function setupStandardKeyboard(input_field, board){
     $(oneTwoThree).click(function(event){
         //q.innerHTML =
         $(input_field).trigger("jpress", [oneTwoThree.innerHTML])
+
         if (NUM_AND_SYM_ON == false){
             NUM_AND_SYM_ON = true
-
+            oneTwoThree.innerHTML = "ABC"
             prevState_q = q.innerHTML; q.innerHTML = "1";
             prevState_w = w.innerHTML; w.innerHTML = "2";
             prevState_e = e.innerHTML; e.innerHTML = "3";
@@ -560,6 +561,7 @@ function setupStandardKeyboard(input_field, board){
             $(shift).show()
             $(extra).hide()
 
+            oneTwoThree.innerHTML = "123"
             q.innerHTML = prevState_q;
             w.innerHTML = prevState_w;
             e.innerHTML = prevState_e;
