@@ -34,23 +34,27 @@ want to have a board on. Either the  `standard.html` or `num.html`.
 Within your html file link both the `jboard.js` and `jboard.css` files into   
 your html file.
 
-	<script src="path/to/jboard.js" charset="utf-8"></script>
-	<link rel="stylesheet" href="path/to/jboard.css" media="screen" charset="utf-8">
-
+```html
+<script src="path/to/jboard.js" charset="utf-8"></script>
+<link rel="stylesheet" href="path/to/jboard.css" media="screen" charset="utf-8">
+```
 ## Step three
 
 create an input tag that looks like the following
 
-	<div class="input-field col s6">
-	  <input placeholder="Placeholder" id="keyboard-1" type="text" class="validate">
-	  <label for="first_name">First Name</label>
-	</div>
+```html
+<div class="input-field col s6">
+  <input placeholder="Placeholder" id="keyboard-1" type="text" class="validate">
+  <label for="first_name">First Name</label>
+</div>
+```
 
 Then within your script tag or in any subsequent javascript files declare   
 the following code
-
-	$('#id-of-input-here').jboard('standard');
-	$('#id-of-input-here').jboard('num');
+```javascript
+$('#id-of-input-here').jboard('standard');
+$('#id-of-input-here').jboard('num');
+```
 
 And now you have a fully functional jboard.
 
@@ -60,7 +64,9 @@ In addition to the jboard, you will also have access to a custom event emitted b
 every key within the jboard. You can access they event by binding an event listener  
 to whatever input has been jboardified with the following code
 
-	$('#id-of-input-here').on( "jpress" , function(event, key){
-		console.log(event, key)
-		// do any other thing here, like $.ajax() request to search engine ;)
-	})
+```javascript
+$('#id-of-input-here').on( "jpress" , function(event, key){
+	console.log(event, key)
+	// do any other thing here, like $.ajax() request to search engine ;)
+})
+```
