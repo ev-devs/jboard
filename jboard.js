@@ -164,10 +164,6 @@ function setupStandardKeyboard(input_field, board){
 
 
     /*NOW WE STUP EVENT HANDLERS FOR OUR KEYBOARD*/
-    console.log(input_field)
-
-
-
     $(shift).click(function(event){
 
         //console.log(jpress)
@@ -249,11 +245,13 @@ function setupStandardKeyboard(input_field, board){
 
     $(enter).click(function(){
         //clickSound.play()
+        $(input_field).trigger("jpress", ['enter'])
         $('#' + board[0].id ).closeModal()
     })
 
     $(del).click(function(event){
         //clickSound.play()
+        $(input_field).trigger("jpress", ['delete'])
         if (input_field.val() != ""){
             input_field.val( input_field.val().substring(0, input_field.val().length - 1) )
         }
@@ -261,6 +259,7 @@ function setupStandardKeyboard(input_field, board){
 
     $(space).click(function(event){
         //clickSound.play()
+        $(input_field).trigger("jpress", ['space'])
         if (input_field.val() != ""){
             input_field.val( input_field.val() + " ")
         }
@@ -270,6 +269,7 @@ function setupStandardKeyboard(input_field, board){
     /*INPUT EVENT FOR NORMAL KEYS HANDLERS*************************************/
     $(q).click(function(event){
         //clickSound.play()
+        $(input_field).trigger("jpress", ['q'])
         if(q.innerHTML != " "){
             $(input_field).val( $(input_field).val() + q.innerHTML )
         }
@@ -277,6 +277,7 @@ function setupStandardKeyboard(input_field, board){
 
     $(w).click(function(event){
         //clickSound.play()
+        $(input_field).trigger("jpress", ['w'])
         if(w.innerHTML != " "){
             $(input_field).val( $(input_field).val() + w.innerHTML )
         }
@@ -284,6 +285,7 @@ function setupStandardKeyboard(input_field, board){
 
     $(e).click(function(event){
         //clickSound.play()
+        $(input_field).trigger("jpress", ['e'])
         if(e.innerHTML != " "){
             $(input_field).val( $(input_field).val() + e.innerHTML )
         }
@@ -291,6 +293,7 @@ function setupStandardKeyboard(input_field, board){
 
     $(r).click(function(event){
         //clickSound.play()
+        $(input_field).trigger("jpress", ['r'])
         if(r.innerHTML != " "){
             $(input_field).val( $(input_field).val() + r.innerHTML )
         }
@@ -298,6 +301,7 @@ function setupStandardKeyboard(input_field, board){
 
     $(t).click(function(event){
         //clickSound.play()
+        $(input_field).trigger("jpress", ['t'])
         if(t.innerHTML != " "){
             $(input_field).val( $(input_field).val() + t.innerHTML )
         }
@@ -305,6 +309,7 @@ function setupStandardKeyboard(input_field, board){
 
     $(y).click(function(event){
         //clickSound.play()
+        $(input_field).trigger("jpress", ['y'])
         if(y.innerHTML != " "){
             $(input_field).val( $(input_field).val() + y.innerHTML )
         }
@@ -312,6 +317,7 @@ function setupStandardKeyboard(input_field, board){
 
     $(u).click(function(event){
         //clickSound.play()
+        $(input_field).trigger("jpress", ['u'])
         if(u.innerHTML != " "){
             $(input_field).val( $(input_field).val() + u.innerHTML )
         }
@@ -319,6 +325,7 @@ function setupStandardKeyboard(input_field, board){
 
     $(i).click(function(event){
         //clickSound.play()
+        $(input_field).trigger("jpress", ['i'])
         if(i.innerHTML != " "){
             $(input_field).val( $(input_field).val() + i.innerHTML )
         }
@@ -326,6 +333,7 @@ function setupStandardKeyboard(input_field, board){
 
     $(o).click(function(event){
         //clickSound.play()
+        $(input_field).trigger("jpress", ['o'])
         if(o.innerHTML != " "){
             $(input_field).val( $(input_field).val() + o.innerHTML )
         }
@@ -333,6 +341,7 @@ function setupStandardKeyboard(input_field, board){
 
     $(p).click(function(event){
         //clickSound.play()
+        $(input_field).trigger("jpress", ['p'])
         if(p.innerHTML != " "){
             $(input_field).val( $(input_field).val() + p.innerHTML )
         }
@@ -341,6 +350,7 @@ function setupStandardKeyboard(input_field, board){
     /*ROW TWO******************************************************************/
     $(a).click(function(event){
         //clickSound.play()
+        $(input_field).trigger("jpress", ['a'])
         if(a.innerHTML != " "){
             $(input_field).val( $(input_field).val() + a.innerHTML )
         }
@@ -348,6 +358,7 @@ function setupStandardKeyboard(input_field, board){
 
     $(s).click(function(event){
         //clickSound.play()
+        $(input_field).trigger("jpress", ['s'])
         if(s.innerHTML != " "){
             $(input_field).val( $(input_field).val() + s.innerHTML )
         }
@@ -355,6 +366,7 @@ function setupStandardKeyboard(input_field, board){
 
     $(d).click(function(event){
         //clickSound.play()
+        $(input_field).trigger("jpress", ['d'])
         if(d.innerHTML != " "){
             $(input_field).val( $(input_field).val() + d.innerHTML )
         }
@@ -362,6 +374,7 @@ function setupStandardKeyboard(input_field, board){
 
     $(f).click(function(event){
         //clickSound.play()
+        $(input_field).trigger("jpress", ['f'])
         if(f.innerHTML != " "){
             $(input_field).val( $(input_field).val() + f.innerHTML )
         }
@@ -369,6 +382,7 @@ function setupStandardKeyboard(input_field, board){
 
     $(g).click(function(event){
         //clickSound.play()
+        $(input_field).trigger("jpress", ['g'])
         if(g.innerHTML != " "){
             $(input_field).val( $(input_field).val() + g.innerHTML )
         }
@@ -376,6 +390,7 @@ function setupStandardKeyboard(input_field, board){
 
     $(h).click(function(event){
         //clickSound.play()
+        $(input_field).trigger("jpress", ['h'])
         if(h.innerHTML != " "){
             $(input_field).val( $(input_field).val() + h.innerHTML )
         }
@@ -383,6 +398,7 @@ function setupStandardKeyboard(input_field, board){
 
     $(j).click(function(event){
         //clickSound.play()
+        $(input_field).trigger("jpress", ['j'])
         if(j.innerHTML != " "){
             $(input_field).val( $(input_field).val() + j.innerHTML )
         }
@@ -390,6 +406,7 @@ function setupStandardKeyboard(input_field, board){
 
     $(k).click(function(event){
         //clickSound.play()
+        $(input_field).trigger("jpress", ['k'])
         if(k.innerHTML != " "){
             $(input_field).val( $(input_field).val() + k.innerHTML )
         }
@@ -397,6 +414,7 @@ function setupStandardKeyboard(input_field, board){
 
     $(l).click(function(event){
         //clickSound.play()
+        $(input_field).trigger("jpress", ['l'])
         if(l.innerHTML != " "){
             $(input_field).val( $(input_field).val() + l.innerHTML )
         }
@@ -408,6 +426,7 @@ function setupStandardKeyboard(input_field, board){
 
     $(z).click(function(event){
         //clickSound.play()
+        $(input_field).trigger("jpress", ['z'])
         if(z.innerHTML != " "){
             $(input_field).val( $(input_field).val() + z.innerHTML )
         }
@@ -422,6 +441,7 @@ function setupStandardKeyboard(input_field, board){
 
     $(c).click(function(event){
         //clickSound.play()
+        $(input_field).trigger("jpress", ['c'])
         if(c.innerHTML != " "){
             $(input_field).val( $(input_field).val() + c.innerHTML )
         }
@@ -429,6 +449,7 @@ function setupStandardKeyboard(input_field, board){
 
     $(v).click(function(event){
         //clickSound.play()
+        $(input_field).trigger("jpress", ['v'])
         if(v.innerHTML != " "){
             $(input_field).val( $(input_field).val() + v.innerHTML )
         }
@@ -436,6 +457,7 @@ function setupStandardKeyboard(input_field, board){
 
     $(b).click(function(event){
         //clickSound.play()
+        $(input_field).trigger("jpress", ['b'])
         if(b.innerHTML != " "){
             $(input_field).val( $(input_field).val() + b.innerHTML )
         }
@@ -443,6 +465,7 @@ function setupStandardKeyboard(input_field, board){
 
     $(n).click(function(event){
         //clickSound.play()
+        $(input_field).trigger("jpress", ['n'])
         if(n.innerHTML != " "){
             $(input_field).val( $(input_field).val() + n.innerHTML )
         }
@@ -450,6 +473,7 @@ function setupStandardKeyboard(input_field, board){
 
     $(m).click(function(event){
         //clickSound.play()
+        $(input_field).trigger("jpress", ['m'])
         if(m.innerHTML != " "){
             $(input_field).val( $(input_field).val() + m.innerHTML )
         }
@@ -457,6 +481,7 @@ function setupStandardKeyboard(input_field, board){
 
     $(comma).click(function(event){
         //clickSound.play()
+        $(input_field).trigger("jpress", ['m'])
         if(comma.innerHTML != " "){
             $(input_field).val( $(input_field).val() + comma.innerHTML )
         }
@@ -464,6 +489,7 @@ function setupStandardKeyboard(input_field, board){
 
     $(dot).click(function(event){
         //clickSound.play()
+        $(input_field).trigger("jpress", ['.'])
         if(dot.innerHTML != " "){
             $(input_field).val( $(input_field).val() + dot.innerHTML )
         }
@@ -471,12 +497,15 @@ function setupStandardKeyboard(input_field, board){
 
     $(at).click(function(event){
         //clickSound.play()
+        $(input_field).trigger("jpress", ['@'])
         if(at.innerHTML != " "){
             $(input_field).val( $(input_field).val() + at.innerHTML )
         }
     })
+
     $(extra).click(function(event){
         //clickSound.play()
+        $(input_field).trigger("jpress", [extra.innerHTML])
         if(extra.innerHTML != " "){
             $(input_field).val( $(input_field).val() + extra.innerHTML )
         }
