@@ -277,7 +277,7 @@ function setupStandardKeyboard(input_field, board){
 
     $(w).click(function(event){
         //clickSound.play()
-        $(input_field).trigger("jpress", [q.innerHTML])
+        $(input_field).trigger("jpress", [w.innerHTML])
         if(w.innerHTML != " "){
             $(input_field).val( $(input_field).val() + w.innerHTML )
         }
@@ -441,7 +441,6 @@ function setupStandardKeyboard(input_field, board){
     $(c).click(function(event){
         //clickSound.play()
         $(input_field).trigger("jpress", [c.innerHTML])
-        $(input_field).trigger("jpress", ['c'])
         if(c.innerHTML != " "){
             $(input_field).val( $(input_field).val() + c.innerHTML )
         }
@@ -458,7 +457,6 @@ function setupStandardKeyboard(input_field, board){
     $(b).click(function(event){
         //clickSound.play()
         $(input_field).trigger("jpress", [b.innerHTML])
-        $(input_field).trigger("jpress", ['b'])
         if(b.innerHTML != " "){
             $(input_field).val( $(input_field).val() + b.innerHTML )
         }
@@ -725,6 +723,7 @@ function setupNumKeyboard(input_field, board){
 
 $('#keyboard-1').on( "jpress", function(event, key){
     console.log(key)
+    // do any other things here
 })
 
 /**/
