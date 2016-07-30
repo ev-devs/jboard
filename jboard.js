@@ -34,7 +34,9 @@ function createStandardKeyboard(input_field){
 
     var newBoard = $('#standard-modal-template').clone()
     newBoard[0].id = input_field[0].id + "-modal"
+    $($(newBoard).children()[0]).css('padding', '5')
     $('body').append(newBoard)
+
     setupStandardKeyboard(input_field, newBoard)
     return newBoard
 }
@@ -43,6 +45,7 @@ function createStandardKeyboard(input_field){
 function createNumKeyboard(input_field){
     var newBoard = $('#num-modal-template').clone()
     newBoard[0].id = input_field[0].id + "-modal"
+    $($(newBoard).children()[0]).css('padding', '5')
     $('body').append(newBoard)
     setupNumKeyboard(input_field, newBoard)
     return newBoard

@@ -1,5 +1,5 @@
 .jboard-key {
-    font-size: 24px;
+    font-size: 30px;
     font-family: Arial Unicode MS;
     font-weight: 900;
     margin: : 6px 6px;
@@ -80,7 +80,7 @@
 
 
 .modal-content {
-    padding-left: 0;
+    padding: 5px;;
     background : #2196f3;
 }
 
