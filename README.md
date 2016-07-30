@@ -26,10 +26,16 @@ In order to create a `jboard` you will need the following
 Copy and paste the "starter" html from the `bin` folder into the html file you  
 want to have a board on. Either the  `standard.html` or `num.html`.
 
+<a href="./bin/standard.html" target="_blank">Standard</a> OR <a href="./bin/num.html" target="_blank">Num</a>
+
+
 ## Step two
 
 Within your html file link both the `jboard.js` and `jboard.css` files into   
 your html file.
+
+	<script src="path/to/jboard.js" charset="utf-8"></script>
+	<link rel="stylesheet" href="path/to/jboard.css" media="screen" charset="utf-8">
 
 ## Step three
 
