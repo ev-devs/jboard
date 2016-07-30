@@ -1,5 +1,5 @@
 # jBoard
-A virtual keyboard and numpad written on top of jQuery and Materialize.css
+A virtual keyboard and numpad written on top of [jQuery](https://jquery.com/) and [Materialize.css](http://materializecss.com/)
 
 ![jboard gif goes here](jboard.gif)
 
