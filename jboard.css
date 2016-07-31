@@ -15,7 +15,7 @@
     -webkit-box-shadow: 0px 1px 3px #000000;
     -moz-box-shadow: 0px 1px 3px #000000;
     -moz-border-radius: 5px;
-    min-width: 55px;
+    min-width: 45px;
 
 }
 
@@ -47,7 +47,7 @@
 }
 
 .standard-row{
-    width: 100%;
+    width: 90%;
     padding: 2px;
 }
 
@@ -62,7 +62,6 @@
 }
 .shift-key {
 
-
 }
 
 .extra-key {
@@ -75,8 +74,6 @@
 .delete-key {
     background: #ef5350;
 }
-
-
 
 .modal-content {
     padding-left: 0;
