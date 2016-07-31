@@ -154,7 +154,10 @@
             $('#keyboard-3').jboard('standard');
             $('#keyboard-4').jboard('num');
 
-
+            $('#keyboard-1').on( "jpress" , function(event, key){
+                console.log(key)
+                // do any other things here
+            })
         </script>
 
         <link rel="stylesheet" href="jboard.css" media="screen" title="no title" charset="utf-8">
