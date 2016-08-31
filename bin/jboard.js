@@ -27,7 +27,6 @@ var jboard = function(arg, input_field) {
     else {
         console.error("ERROR: Invalid Argument to jboard \n Only 'standard' or 'num' accepted")
     }
-
 }
 
 function createStandardKeyboard(input_field){
@@ -676,8 +675,6 @@ function setupNumKeyboard(input_field, board){
         $(input_field).val( "" )
     })
 
-
-
     $(one).click(function(event){
         //clickSound.play();
         $(input_field).trigger("jpress", [one.innerHTML])
@@ -727,5 +724,7 @@ function setupNumKeyboard(input_field, board){
 }
 
 
-
+$(document).on('jpress', function(event){
+    console.log(event)
+})
 /**/
