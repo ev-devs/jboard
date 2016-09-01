@@ -539,7 +539,7 @@ function setupStandardKeyboard(input_field, board){
             prevState_g = g.innerHTML; g.innerHTML = "(";
             prevState_h = h.innerHTML; h.innerHTML = ")";
             prevState_j = j.innerHTML; j.innerHTML = "$";
-            prevState_k = k.innerHTML; k.innerHTML = "&";
+            prevState_k = k.innerHTML; k.innerHTML = "\&";
             prevState_l = l.innerHTML; l.innerHTML = "@";
 
             $(shift).hide()
